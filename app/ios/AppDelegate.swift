@@ -1,4 +1,5 @@
 import UIKit
+import ScreenLib
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -8,7 +9,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         _ application: UIApplication, 
         didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         
-        let navigation = UINavigationController(rootViewController: UIViewController())
+        let navigation = UINavigationController(rootViewController: MainVC())
         window = UIWindow(frame: UIScreen.main.bounds)
         window?.rootViewController = navigation
         window?.makeKeyAndVisible()

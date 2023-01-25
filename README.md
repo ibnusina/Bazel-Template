@@ -1,0 +1,1 @@
+bazel run app/ios:ios-app

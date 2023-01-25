@@ -4,7 +4,7 @@ load("@build_bazel_rules_swift//swift:swift.bzl", "swift_library")
 swift_library(
     name = "mylib",
     srcs = glob(['**/*.swift']),
-    deps = []
+    deps = ["//app/screen-lib:ScreenLib"]
 )
 
 ios_application(
@@ -18,5 +18,5 @@ ios_application(
     minimum_os_version = "15.0",
     # provisioning_profile = "<your_profile_name>.mobileprovision", # Uncomment and set your own profile.
     visibility = ["//visibility:public"],
-    deps = [":mylib"],
+    deps = ["//app/ios:mylib"],
 )

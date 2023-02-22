@@ -34,15 +34,6 @@ load(
 
 apple_support_dependencies()
 
-TULSI_COMMIT_HASH = "518f18da4948192c72074e07fa1dfe15858d40f4"
-
-http_archive(
-    name = "tulsi",
-    url = "https://github.com/bazelbuild/tulsi/archive/{0}.tar.gz".format(TULSI_COMMIT_HASH),
-    strip_prefix = "tulsi-{0}".format(TULSI_COMMIT_HASH),
-    sha256 = "92c89fcabfefc313dafea1cbc96c9f68d6f2025f2436ee11f7a4e4eb640fa151",
-)
-
 http_archive(
     name = "com_github_buildbuddy_io_rules_xcodeproj",
     sha256 = "cb4ae95d86a1961734f17a1d4743010480a576214519ceb2ce9cec34b88da7b2",

@@ -1,5 +1,0 @@
-import Foundation
-
-func main() {
-    print("hello world")
-}

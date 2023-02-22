@@ -10,3 +10,4 @@ bazel-*
 # Maven
 target/
 .DS_Store
+*.xcodeproj
